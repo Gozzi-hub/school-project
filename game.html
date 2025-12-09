@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>GozziTube - Gaming</title>
+</head>
+<body>
+
+    <!-- Menu Button -->
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><h2 class="logo">GozziTube</h2></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./channel.html">My Channel</a></li>
+            <li><a href="./trending.html">Trending</a></li>
+            <li><a href="./music.html" class="active">Music</a></li>
+            <li><a href="./game.html">Gaming</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <input type="text" class="Search" placeholder="Search gaming videos...">
+            <button>Search</button>
+             <button class="voice-btn">🎤</button>
+             <div class="top-icons">
+            <button class="create-btn">+</button>
+            <button class="notify-btn">🔔</button>
+    </div>
+        </div>
+
+        <h2 class="section-title">Gaming Videos</h2>
+
+        <div class="video-grid">
+            <a href="watch.html" class="video-card">
+                <img src="./car (10).jpg" class="top-icon" alt="">
+                <video src="./26619-359604050_tiny.mp4" controls autoplay loop></video>
+                <h3>Car Racing Video Highlights</h3>
+                <p>3.5M views • 5 days ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./chess (10).jpg" class="top-icon" alt="">
+                <video src="./89985-620432901_tiny.mp4" controls autoplay loop></video>
+                <h3>Chess Video</h3>
+                <p>1.8M views • 1 week ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./vr (10).jpg" class="top-icon" alt="">
+                <video src="./185805-876514099_small (1).mp4" controls autoplay loop></video>
+                <h3>Virtual Reality Video Game</h3>
+                <p>2.4M views • 3 days ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./c-o-d (10).jpg" class="top-icon" alt="">
+                <video src="./72488-543388303_small.mp4" controls  loop></video>
+                <h3>Call Of Duty Highlights</h3>
+                <p>900k views • 2 weeks ago</p>
+            </a>
+            <a href="watch.html" class="video-card">
+                <img src="./dart (10).jpg" class="top-icon" alt="">
+                <video src="./115074-703067930_small (2).mp4" controls autoplay loop></video>
+                <h3>Dart Highlights</h3>
+                <p>900k views • 2 weeks ago</p>
+            </a>
+             <a href="watch.html" class="video-card">
+                <img src="./football (10).jpg" class="top-icon" alt="">
+                <video src="./158633-817153726_tiny.mp4" controls autoplay loop></video>
+                <h3>Football Highlights</h3>
+                <p>2.5m views • 2 weeks ago</p>
+            </a>
+        </div>
+
+        <footer>
+            <p>GozziTube © 2025 • Gaming Section</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleSidebar(){
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
+   

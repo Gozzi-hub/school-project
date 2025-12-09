@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>GozziTube - My Channel</title>
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><h2 class="logo">GozziTube</h2></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./channel.html">My Channel</a></li>
+            <li><a href="./trending.html">Trending</a></li>
+            <li><a href="./music.html" class="active">Music</a></li>
+            <li><a href="./game.html">Gaming</a></li>
+        </ul>
+    </div>
+   
+    <div class="main">
+        <div class="channel-header">
+            <img src="./download (4).jpg" alt="Profile Picture" class="channel-profile">
+           <div>
+             <h1>GozziTube</h1>
+            <p>1.5M subscribers</p> 
+           </div>
+        </div>
+         <h1 class="section-title">Uploads</h1>
+        <div class="video-grid">
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (4).jpg" class="profile-icon" />
+                </div>
+                <video src="./124842-731960064_tiny (1).mp4" controls autoplay loop></video>
+                <h3>Channel Video 1</h3>
+                <p>500k views • 3 days ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (5).jpg" class="profile-icon" />
+                </div>
+                <video src="./131174-749706777_tiny.mp4" controls autoplay loop></video>
+                <h3>Channel Video 2</h3>
+                <p>300k views • 1 week ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (6).jpg" class="profile-icon" />
+                </div>
+                <video src="./427-136184291_tiny (1).mp4" controls autoplay loop></video>
+                <h3>Channel Video 3</h3>
+                <p>100k views • 2 weeks ago</p>
+            </a>
+        </div>
+
+        <footer>
+            <p>GozziTube © 2025 | Created for School Project</p>
+        </footer>
+    </div>
+
+<script>
+    function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle("active")
+    }
+</script>
+</body>
+</html>

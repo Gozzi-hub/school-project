@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>GozziTube - Trending</title>
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><h2 class="logo">GozziTube</h2></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./channel.html">My Channel</a></li>
+            <li><a href="./trending.html">Trending</a></li>
+            <li><a href="./music.html" class="active">Music</a></li>
+            <li><a href="./game.html">Gaming</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <input type="text" class="Search" placeholder="Search videos...">
+            <button>Search</button>
+             <button class="voice-btn">🎤</button>
+             <div class="top-icons">
+            <button class="create-btn">+</button>
+            <button class="notify-btn">🔔</button>
+    </div>
+        </div>
+
+        <h1  class="section-title">Trending Videos</h1>
+
+        <div class="video-grid">
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (9).jpg" class="profile-icon" />
+                </div>
+                <video src="./124842-731960064_tiny (1).mp4" controls autoplay loop></video>
+                <h3>Trending Video 1</h3>
+                <p>2M views • 1 day ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (4).jpg" class="profile-icon" />
+                </div>
+                <video src="./427-136184291_tiny.mp4" controls autoplay loop></video>
+                <h3>Trending Video 2</h3>
+                <p>1.5M views • 3 days ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (6).jpg" class="profile-icon" />
+                </div>
+                <video src="./1992-153555258_tiny.mp4" controls autoplay loop></video>
+                <h3>Trending Video 3</h3>
+                <p>1M views • 1 week ago</p>
+            </a>
+             <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./download (6).jpg" class="profile-icon" />
+                </div>
+                <video src="./427-136184291_tiny.mp4" controls autoplay loop></video>
+                <h3>Daily Vlog Video</h3>
+                <p>500k views • 4 days ago</p>
+            </a>
+            <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./vampire (2).jpg" class="profile-icon" />
+                </div>
+                <video src="./28388-369533658_small.mp4" controls autoplay loop></video>
+                <h3>Vampire, Hallowen Video</h3>
+                <p>800k views • 5 days ago</p>
+            </a>
+             <a href="watch.html" class="video-card">
+                <div class="overlay-icon">
+                    <img src="./bicycle (10).jpg" class="profile-icon" />
+                </div>
+                <video src="./911-141888473_small.mp4" controls autoplay loop></video>
+                <h3>Bicycle Rider Video</h3>
+                <p>880k views • 5 days ago</p>
+            </a> 
+        </div>
+
+        <footer>
+            <p>GozziTube © 2025 | Created For School Project</p>
+        </footer>
+    </div>
+
+<script>
+    function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle("active")
+    }
+</script>
+</body>
+</html>

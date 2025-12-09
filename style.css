@@ -1,0 +1,193 @@
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #111;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -220px;
+    padding-top: 20px;
+    transition: 0.3s;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background: #333;
+    border-left: 5px solid #ff0000; /* Color on hover */
+    color: #ff0000;
+}
+
+/* Topbar */
+.topbar {
+    margin-left: 250px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-icon:hover {
+    background: #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.top-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-icons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.top-icons button:hover {
+    background: #ccc;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.create-btn {
+    font-weight: bold;
+}
+
+.notify-btn {
+    font-size: 18px;
+}
+.voice-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f1f1f1;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.voice-btn:hover {
+    background: #ddd;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* Video grid */
+.video-grid {
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    padding-top: 60px; /* pushes text down so icon does not overlap */
+    transition: 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Circle image on top of videos */
+.overlay-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+    pointer-events: none;
+}
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-left: 250px;
+    padding: 20px;
+    text-align: center;
+    background: #f2f2f2;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+.logo{
+    color: #3f2;
+    text-align: center;
+}
+.menu-btn{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: red;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #000;
+    color: white;
+}
+.channel-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 10px #0002;
+    margin-bottom: 20px;
+}
+.channel-profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.section-title{
+    margin-left: 300px;
+}
+.Search{
+    border-radius: 100px;
+    width: 900px;
+    height: 100%;
+
+}

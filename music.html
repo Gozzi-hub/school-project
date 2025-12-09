@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>GozziTube - Music</title>
+</head>
+<body>
+
+    <!-- Menu Button -->
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><h2 class="logo">GozziTube</h2></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./channel.html">My Channel</a></li>
+            <li><a href="./trending.html">Trending</a></li>
+            <li><a href="./music.html" class="active">Music</a></li>
+            <li><a href="./game.html">Gaming</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <input type="text" class="Search" placeholder="Search music...">
+            
+            <button>Search</button>
+             <button class="voice-btn">🎤</button>
+            <div class="top-icons">
+            <button class="create-btn">+</button>
+            <button class="notify-btn">🔔</button>
+    </div>
+        </div>
+
+        <h1  class="section-title">Music Videos</h1>
+
+        <div class="video-grid">
+            <a href="watch.html" class="video-card">
+                <img src="./Rema(10).jpg" class="top-icon" alt="">
+                <video src="./Rema-FUN-Video-(TrendyBeatz.com).mp4" controls loop></video>
+                <h3>Top Afrobeats Mix</h3>
+                <p>2.3M views • 1 week ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./moses bliss (10).jpg" class="top-icon" alt="">
+                <video src="./Moses-Bliss-Bigger-Everyday-Ft-Festizie-Membrane-Uwa-Chris-Heaven-Temple-Video-(TrendyBeatz.com).mp4" controls  loop></video>
+                <h3>Best Gospel Worship</h3>
+                <p>1.1M views • 3 days ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./wizkid (10).jpg" class="top-icon" alt="">
+                <video src="./Wizkid-Ft-Brent-Faiyaz-Piece-Of-My-Heart-Video-(TrendyBeatz.com) (1).mp4" controls loop></video>
+                <h3>Hip-Hop New Release</h3>
+                <p>900k views • 2 weeks ago</p>
+            </a>
+
+            <a href="watch.html" class="video-card">
+                <img src="./flavour (10).jpg" class="top-icon" alt="">
+                <video src="./Flavour-The-Eagle-Has-Landed-Video-(TrendyBeatz.com).mp4" controls loop></video>
+                <h3>Cool R&B Vibes</h3>
+                <p>750k views • 6 days ago</p>
+            </a>
+        </div>
+
+        <footer>
+            <p>GozziTube © 2025 • Music Section</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSidebar(){
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
