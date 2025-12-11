@@ -1,118 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GozziTube - Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styel.css">
+    <title>GozziTube</title>
 </head>
 <body>
-    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
-
-    <div class="sidebar" id="sidebar">
-      <ul>
-            <li><h2 class="logo">GozziTube</h2></li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./channel.html">My Channel</a></li>
-            <li><a href="./trending.html">Trending</a></li>
-            <li><a href="./music.html" class="active">Music</a></li>
-            <li><a href="./game.html">Gaming</a></li>
-        </ul>
-    </div>
-
+     <a href="./index.html">
+        <img src="./image/youtube.png" alt="" class="yt-logo">
+    </a>
     <div class="main">
         <div class="topbar">
             <input type="text" class="Search" placeholder="Search ...">
             <button>Search</button>
              <button class="voice-btn">🎤</button>
             <div class="top-icons">
-            <button class="create-btn">+</button>
-            <button class="notify-btn">🔔</button>
-    </div>
+                <button class="create-btn">+</button>
+                <button class="notify-btn">🔔</button>
+            </div>     
         </div>
-
-        <div class="video-grid">
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./download (9).jpg" class="profile-icon" />
-                </div>
-                <video src="./124842-731960064_tiny (1).mp4" controls autoplay loop></video>
-                <h3>My First Video</h3>
-                <p>1.2M views • 2 days ago</p>
-            </a>
-
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./download (5).jpg" class="profile-icon" />
-                </div>
-                <video src="./131174-749706777_tiny.mp4" controls autoplay loop></video>
-                <h3>Funny Moments</h3>
-                <p>900k views • 1 week ago</p>
-            </a>
-
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./download (4).jpg" class="profile-icon" />
-                </div>
-                <video src="./1992-153555258_tiny.mp4" controls autoplay loop></video>
-                <h3>Tech Review</h3>
-                <p>500k views • 4 days ago</p>
-            </a>
-
-             <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./download (6).jpg" class="profile-icon" />
-                </div>
-                <video src="./427-136184291_tiny.mp4" controls autoplay loop></video>
-                <h3>Daily Vlog Video</h3>
-                <p>500k views • 4 days ago</p>
-            </a>
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./vampire (2).jpg" class="profile-icon" />
-                </div>
-                <video src="./28388-369533658_small.mp4" controls autoplay loop></video>
-                <h3>Vampire, Hallowen Video</h3>
-                <p>800k views • 5 days ago</p>
-            </a>
-             <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./bicycle (10).jpg" class="profile-icon" />
-                </div>
-                <video src="./911-141888473_small.mp4" controls autoplay loop></video>
-                <h3>Bicycle Rider Video</h3>
-                <p>880k views • 5 days ago</p>
-            </a>
-             <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./skater (2).jpg" class="profile-icon" />
-                </div>
-                <video src="./275515_tiny.mp4" controls autoplay loop></video>
-                <h3>Skater Rider Video</h3>
-                <p>880k views • 5 days ago</p>
-            </a>
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./basketball (10).jpg" class="profile-icon" />
-                </div>
-                <video src="./208442_tiny.mp4" controls autoplay loop></video>
-                <h3>Basketball Video</h3>
-                <p>1.2m views • 5 days ago</p>
-            </a>
-            <a href="watch.html" class="video-card">
-                <div class="overlay-icon">
-                    <img src="./illusion (10).jpg" class="profile-icon" />
-                </div>
-                <video src="./155923-811409418_tiny.mp4" controls autoplay loop></video>
-                <h3>Illusion Video</h3>
-                <p>1.4m views • 7 days ago</p>
-            </a>
+        <div class="category-bar">
+            <button class="active">All</button>
+            <button class="cat">Live</button>
+            <button class="cat">Nollywood</button>
+            <button class="cat">Music</button>
+            <button class="cat">Action Thrillers</button>
+            <button class="cat">Thrillers</button>
+            <button class="cat">Gaming</button>
+            <button class="cat">Skills</button>
+            <button class="cat">News</button>
         </div>
-
-        <footer>
-            <p>GozziTube © 2025 | Created For School Project</p>
-        </footer>
     </div>
+
+<div class="menu-btn" onclick="toggleSidebar()">☰</div>>
+      
+   <aside id="sidebar">
+    
+    <ul class="yt-section">
+        <li class="yt-item active"><span>🏠</span> Home</li>
+        <li class="yt-item"><span>🎬</span> Shorts</li>
+        <li class="yt-item"><span>📺</span> Subscriptions</li>
+        <li class="yt-item"><span>📚</span> Library</li>
+        <li class="yt-item"><span>🕒</span> History</li>
+        <li class="yt-item"><span>⏳</span> Watch Later</li>
+        <li class="yt-item"><span>👍</span> Liked Videos</li>
+    </ul>
+
+    <h3 class="yt-title">Subscriptions</h3>
+    <ul class="yt-section">
+        <li class="yt-item"><span>👨‍💻</span> LearnCode.academy</li>
+        <li class="yt-item"><span>🔒</span> Privacy Matters</li>
+        <li class="yt-item"><span>🎨</span> DesignWithArash</li>
+        <li class="yt-item"><span>🧑‍🎤</span> Dinjik</li>
+        <li class="yt-item"><span>👩‍💻</span> Cyber Girl</li>
+        <li class="yt-item"><span>🐶</span> DOGGY KPORO</li>
+        <li class="yt-item"><span>😂</span> Sydney Talker</li>
+    </ul>
+
+    <h3 class="yt-title">Explore</h3>
+    <ul class="yt-section">
+        <li class="yt-item"><span>🎵</span> Music</li>
+        <li class="yt-item"><span>🎮</span> Gaming</li>
+        <li class="yt-item"><span>📰</span> News</li>
+        <li class="yt-item"><span>⚙️</span> Skills</li>
+        <li class="yt-item"><span>💻</span> HTML</li>
+        <li class="yt-item"><span>🥁</span> African Music</li>
+        <li class="yt-item"><span>🎥</span> Animated Films</li>
+    </ul>
+
+</aside>
+
+<div class="video-grid">
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./911-141888473_small.mp4" controls 
+               poster="./image/bicycle (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/bicycle (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">My First Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 2 days ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./131174-749706777_tiny.mp4" controls 
+               poster="./image/download (5).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (5).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Funny Moment</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 1 Week ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./1992-153555258_tiny.mp4" controls 
+               poster="./image/download (4).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (4).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Tech Review</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1m views • 4 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./427-136184291_tiny (1).mp4" controls 
+               poster="./image/download (6).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (6).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Daily Vlog Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">900k views • 4 day ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./155923-811409418_tiny.mp4" controls 
+               poster="./image/illusion (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/illusion (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Illusion Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.8m views • 7 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./208442_tiny.mp4" controls 
+               poster="./image/basketball (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/basketball (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Basketball Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2m views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./275515_tiny.mp4" controls 
+               poster="./image/skater (2).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/skater (2).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Skater Rider Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">880k views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./911-141888473_small.mp4" controls 
+               poster="./image/bicycle (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/bicycle (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">My First Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 2 days ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./131174-749706777_tiny.mp4" controls 
+               poster="./image/download (5).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (5).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Funny Moment</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 1 Week ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./1992-153555258_tiny.mp4" controls 
+               poster="./image/download (4).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (4).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Tech Review</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1m views • 4 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./427-136184291_tiny (1).mp4" controls 
+               poster="./image/download (6).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (6).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Daily Vlog Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">900k views • 4 day ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./155923-811409418_tiny.mp4" controls 
+               poster="./image/illusion (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/illusion (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Illusion Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.8m views • 7 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./208442_tiny.mp4" controls 
+               poster="./image/basketball (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/basketball (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Basketball Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2m views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./275515_tiny.mp4" controls 
+               poster="./image/skater (2).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/skater (2).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Skater Rider Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">880k views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./911-141888473_small.mp4" controls 
+               poster="./image/bicycle (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/bicycle (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">My First Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 2 days ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./131174-749706777_tiny.mp4" controls 
+               poster="./image/download (5).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (5).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Funny Moment</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2M views • 1 Week ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./1992-153555258_tiny.mp4" controls 
+               poster="./image/download (4).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (4).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Tech Review</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1m views • 4 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./427-136184291_tiny (1).mp4" controls 
+               poster="./image/download (6).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/download (6).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Daily Vlog Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">900k views • 4 day ago</p>
+        </div>
+    </div>
+    </div>
+     <div class="video-card">
+    <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./155923-811409418_tiny.mp4" controls 
+               poster="./image/illusion (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/illusion (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Illusion Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.8m views • 7 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./208442_tiny.mp4" controls 
+               poster="./image/basketball (10).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/basketball (10).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Basketball Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">1.2m views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+    <div class="video-card">
+     <a href="watch.html" class="thumb-link">
+        <video class="thumbnail" 
+               src="./275515_tiny.mp4" controls 
+               poster="./image/skater (2).jpg">
+        </video>
+    </a>
+
+    <div class="video-info">
+        <img src="./image/skater (2).jpg" class="channel-img">
+
+        <div class="text-area">
+            <h3 class="video-title">Skater Rider Video</h3>
+            <p class="channel-name">Gozzi Studio</p>
+            <p class="video-stats">880k views • 5 days ago</p>
+        </div>
+    </div>
+    </div>
+</div>
 
 <script>
     function toggleSidebar(){

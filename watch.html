@@ -1,98 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GozziTube - Watch</title>
-    <link rel="stylesheet" href="./watch.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - GozziTube</title>
+    <link rel="stylesheet" href="./watch.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="left">
-            <a href="index.html" class="back-btn">⟵</a>
-            <h2 class="logo">GozziTube</h2>
-        </div>
-
-        <div class="center">
-            <input type="text" placeholder="Search" class="search-box" />
-            <button class="search-btn">🔍</button>
-            <button class="voice-btn">🎤</button>
-        </div>
-
-        <div class="right">
-            <button class="create-btn">➕</button>
-            <button class="notify-btn">🔔</button>
-            <img src="profile.jpg" class="profile" />
-        </div>
-    </header>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" id="menu-btn">☰</label>
 
 
-    <!-- MAIN CONTAINER -->
-    <div class="container">
+<aside id="sidebar">
+    <ul class="yt-section">
+        <li class="yt-item active"><span>🏠</span><a href="./index.html"> Home</a></li>
+        <li class="yt-item"><span>🎬</span> Shorts</li>
+        <li class="yt-item"><span>📺</span> Subscriptions</li>
+        <li class="yt-item"><span>📚</span> Library</li>
+    </ul>
+</aside>
 
-        <!-- MAIN VIDEO PLAYER -->
-        <div class="video-section">
-            <video src="124842-731960064_tiny (1).mp4" controls autoplay></video>
+<!-- MAIN CONTENT -->
+<div class="main-content">
 
-            <h2 class="title">My First Video</h2>
-            <p class="views">1.2M views • 2 days ago</p>
+    <div class="watch-container">
 
-            <hr>
+        <!-- VIDEO PLAYER SECTION -->
+        <div class="video-player">
+            <video id="main-video" controls poster="./image/bicycle (10).jpg">
+                <source src="./911-141888473_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
+            <h2 class="video-title">My First Video</h2>
+            <p class="video-stats">1.2M views • 2 days ago</p>
+
+            <!-- CHANNEL INFO -->
             <div class="channel-info">
-                <img src="download (9).jpg" class="channel-pic" />
-                <div>
-                    <h3>My Channel</h3>
-                    <p>1.5 Subscribers</p>
+                <img src="./image/bicycle (10).jpg" class="channel-img">
+                <div class="channel-text">
+                    <h3>Gozzi Studio</h3>
                 </div>
-                <button class="sub-btn">Subscribe</button>
+                <button class="subscribe-btn">Subscribe</button>
             </div>
-             <footer>
-            <p>GozziTube © 2025 • Watch Section</p>
-        </footer>
 
+            <!-- DESCRIPTION -->
+            <div class="video-description">
+                <p>This is a description for the video. Add info, links, and hashtags here.</p>
+            </div>
         </div>
 
-
-        <!-- SUGGESTED / NEXT VIDEOS -->
-        <div class="suggested">
+        <!-- UP NEXT SECTION -->
+        <div class="recommended-videos">
             <h3>Up Next</h3>
 
-            <!-- VIDEO CARD 1 -->
-            <a href="watch.html" class="video-card">
-                <img src="download (5).jpg" class="thumb" />
-                <div>
-                    <h4>Funny Moments</h4>
-                    <p>Channel Name</p>
-                    <p class="views-small">900k views</p>
+            <div class="video-card">
+                <a href="watch.html">
+                    <video class="thumbnail" src="./131174-749706777_tiny.mp4" 
+                        poster="./image/download (5).jpg">
+                    </video>
+                </a>
+                <div class="video-info">
+                    <h4>Funny Moment</h4>
+                    <p>Gozzi Studio • 1.2M views</p>
                 </div>
-            </a>
+            </div>
 
-            <!-- VIDEO CARD 2 -->
-            <a href="watch.html" class="video-card">
-                <img src="download (4).jpg" class="thumb" />
-                <div>
+            <div class="video-card">
+                <a href="watch.html">
+                    <video class="thumbnail" src="./1992-153555258_tiny.mp4" 
+                        poster="./image/download (4).jpg">
+                    </video>
+                </a>
+                <div class="video-info">
                     <h4>Tech Review</h4>
-                    <p>Channel Name</p>
-                    <p class="views-small">500k views</p>
+                    <p>Gozzi Studio • 1M views</p>
                 </div>
-            </a>
-
-            <!-- VIDEO CARD 3 -->
-            <a href="watch.html" class="video-card">
-                <img src="download (6).jpg" class="thumb" />
-                <div>
-                    <h4>Daily Vlog Video</h4>
-                    <p>Channel Name</p>
-                    <p class="views-small">300k views</p>
-                </div>
-            </a>
-
+            </div>
+            
         </div>
-    
     </div>
-     
+</div>
+<script>
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
 </body>
 </html>

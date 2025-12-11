@@ -1,0 +1,330 @@
+
+/* MENU BUTTON */
+.menu-btn {
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px 10px;
+    overflow-y: auto;
+
+    transform: translateX(-250px); 
+    transition: transform .3s ease-in-out;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Hover underline */
+.sidebar li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #ff0000; /* underline color */
+    transition: width 0.3s;
+}
+
+.sidebar li:hover::after {
+    width: 100%; /* full underline on hover */
+}
+
+/* Optional: active menu item */
+.sidebar li.active::after {
+    width: 100%;
+}
+
+
+#sidebar.active {
+    transform: translateX(0);
+}
+#sidebar ul li {
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: .2s;
+}
+#sidebar ul li.active {
+    background: #f2f2f2;
+    font-weight: bold;
+}
+#sidebar ul li:hover {
+    background: #e8e8e8;
+    transform: translateX(6px);  
+}
+#sidebar h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.yt-logo{
+    height: 80px;
+    width: auto;
+    margin-left: 68px;
+}
+/* CATEGORY BAR */
+.category-bar {
+    display: flex;
+    gap: 12px;
+    padding: 12px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome */
+}
+
+/* CATEGORY BUTTONS */
+.cat,
+.category-bar button {
+    padding: 8px 16px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #0f0f0f;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cat:hover,
+.category-bar button:hover {
+    background: #e5e5e5;
+}
+
+/* ACTIVE BUTTON */
+.cat.active {
+    background: #000;
+    color: #fff;
+}
+
+.topbar {
+    margin-left: 250px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-icon:hover {
+    background: #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.search{
+    width: 600px;
+    height: 200px;
+    border-radius: 200px;
+}
+.top-icons {
+    display: flex;
+    gap: 10px;
+}
+.top-icons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.top-icons button:hover {
+    background: #ccc;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.create-btn {
+    font-weight: bold;
+}
+
+.notify-btn {
+    font-size: 18px;
+}
+.voice-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f1f1f1;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.voice-btn:hover {
+    background: #ddd;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+.video-card {
+    width: 100%;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #000;
+}
+
+.video-info {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.channel-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2px;
+}
+
+.video-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.channel-name {
+    font-size: 13px;
+    color: #606060;
+    margin: 3px 0 0;
+}
+
+.video-stats {
+    font-size: 13px;
+    color: #606060;
+    margin-top: 2px;
+}
+.yt-sidebar {
+    width: 240px;
+    padding: 10px 0;
+    background: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.yt-section {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.yt-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 15px;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.yt-item:hover {
+    background: #f2f2f2;
+}
+
+.yt-item.active {
+    background: #e5e5e5;
+    font-weight: 600;
+}
+
+.yt-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 18px 0 8px 18px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.yt-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.yt-sidebar::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+
+.yt-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000; /* underline color */
+    transition: width 0.3s ease;
+}
+
+/* Hover or active underline */
+.yt-item:hover::after,
+.yt-item.active::after {
+    width: 100%;
+}
+
+/* Optional: text color change on hover */
+.yt-item:hover {
+    color: #ff0000;
+}
